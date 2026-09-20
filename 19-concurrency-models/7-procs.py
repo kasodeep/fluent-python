@@ -9,7 +9,7 @@ from typing import NamedTuple
 from multiprocessing import Process, SimpleQueue, cpu_count
 from multiprocessing import queues
 
-from primes import is_prime, NUMBERS
+from common.primes import is_prime, NUMBERS
 
 # NOTE:
 # - Poison pill is `0`. Unsafe as a sentinel in general — it only works

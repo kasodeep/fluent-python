@@ -5,7 +5,7 @@ and threading code for CPU-intensive work.
 from time import perf_counter
 from typing import NamedTuple
 
-from primes import is_prime, NUMBERS
+from common.primes import is_prime, NUMBERS
 
 
 class Result(NamedTuple):
