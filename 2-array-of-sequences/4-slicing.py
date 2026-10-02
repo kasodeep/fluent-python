@@ -13,7 +13,7 @@ del l[5:7]
 
 print(l)  # Output: [0, 1, 20, 30, 5, 6, 7, 8, 9]
 
-l[2:5] = 100
+l[2:5] = [100]
 
 # Use * and + operators with slices
 l = [1, 2, 3, 4, 5]
@@ -28,7 +28,7 @@ print(my_list)
 board = [['_'] * 3 for i in range(3)]
 print(board)  # Output: [['_', '_', '_'], ['_', '_', '_'], ['_', '_', '_']]
 
-print(weird_board = [['_'] * 3] * 3) # useless
+print([['_'] * 3] * 3) # useless
 
 """
 For mutable sequences (list, bytearray), *= calls __imul__, which modifies the object in place — same object, same id(), just its contents changed.
